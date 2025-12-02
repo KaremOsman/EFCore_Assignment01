@@ -13,7 +13,6 @@ namespace Assignment01
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
-            base.OnModelCreating(modelBuilder);
         }
         public DbSet<Student> Students { get; set; }
         public DbSet<Department> Departments { get; set; }
